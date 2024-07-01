@@ -25,6 +25,7 @@ public class Goal {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer goalId;
+	
 	private String description;
 	private LocalDate targetDate;
 	private boolean achieved;
