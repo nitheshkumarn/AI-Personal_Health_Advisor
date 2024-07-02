@@ -29,6 +29,7 @@ public class User {
 	private String userName;
 	private String userPass;
 	private String userEmail;
+	boolean isEmailVerified;
 	
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
 	private Set<HealthData> healthData;
