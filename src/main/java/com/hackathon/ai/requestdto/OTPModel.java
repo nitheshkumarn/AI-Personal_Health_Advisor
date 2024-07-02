@@ -1,4 +1,6 @@
-package com.hackathon.ai.responsedto;
+package com.hackathon.ai.requestdto;
+
+
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,15 +8,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Setter
 @Getter
+@Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserResponse {
-
-	private Integer userId;
-	private String userName;
-	private String userEmail;
-
+public class OTPModel {
+	private String email;
+	private String otp;
 }
