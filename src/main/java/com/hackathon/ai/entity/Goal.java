@@ -31,7 +31,7 @@ public class Goal {
 	private boolean achieved;
 	
 	@ManyToOne
-	@JoinColumn(name = "user_id", nullable = false)
+	@JoinColumn(name = "user_id")
 	private User user;
 	
 	

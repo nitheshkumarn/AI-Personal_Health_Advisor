@@ -25,12 +25,12 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 @CrossOrigin(allowCredentials = "true", origins = "http://localhost:5175/")
 
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/users")
 public class UserController {
 	
 	private UserService us;
 
-	@PostMapping("/users/register")
+	@PostMapping("/register")
 	public ResponseEntity<ResponseStructure<UserResponse>> registerUser(@RequestBody UserRequest userRequest) {
 		return us.registerUser(userRequest);
 	}

@@ -255,7 +255,7 @@ public class UserServiceImpl implements UserService {
 	private void confirmMail(User user) throws MessagingException {
 		sendMail(MessageStructure.builder().to(user.getUserEmail()).subject("Registeration complete ")
 				.sentDate(new Date()).text("Namaste, " + user.getUserName()
-						+ "You have been registerd successfully to the <h1>FlipKart</h1>")
+						+ "You have been registerd successfully to the <h1>PersonalBuddy</h1>")
 				.build());
 	}
 

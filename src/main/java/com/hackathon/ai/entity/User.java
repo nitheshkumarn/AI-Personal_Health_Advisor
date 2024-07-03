@@ -32,16 +32,16 @@ public class User {
 	boolean isEmailVerified;
 	
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-	private Set<HealthData> healthData;
+	private Set<HealthData> setOfhHealthData;
 	
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-	private Set<Goal> goals;
+	private Set<Goal> setOfGoals;
 	
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-	private Set<Recommendation> recommendations;
+	private Set<Recommendation> setOfRecommendations;
 	
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-	private Set<Notification> notifications;
+	private Set<Notification> setOfNotifications;
 	
 
 }

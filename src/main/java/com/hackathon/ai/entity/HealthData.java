@@ -32,7 +32,7 @@ public class HealthData {
 	private int sleepHours;
 	
 	@ManyToOne
-	@JoinColumn(name = "user_id", nullable = false)
+	@JoinColumn(name = "user_id")
 	private User user;
 	
 	

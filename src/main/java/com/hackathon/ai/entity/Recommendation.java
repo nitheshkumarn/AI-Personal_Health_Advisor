@@ -31,10 +31,10 @@ public class Recommendation {
 	
 	
 	@ManyToOne
-	@JoinColumn(name = "user_id", nullable = false)
+	@JoinColumn(name = "user_id")
 	private User user;
 	
 	@ManyToOne
-	@JoinColumn(name = "health_data_id", nullable = false)
+	@JoinColumn(name = "health_data_id")
 	private HealthData healthData;
 }
